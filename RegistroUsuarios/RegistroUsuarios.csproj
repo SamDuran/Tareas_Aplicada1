@@ -14,5 +14,19 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
-
+  <ItemGroup>
+    <Resource Include="./Resources/Icons/Main_BG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="./Resources/Icons/Registro.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="./Resources/Icons/Imagen_Eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="./Resources/Icons/Imagen_Guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="./Resources/Icons/Imagen_Nuevo.png" />
+  </ItemGroup>
 </Project>

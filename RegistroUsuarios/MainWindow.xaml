@@ -5,41 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RegistroUsuarios"
         mc:Ignorable="d"
-        Title="Registro" Width="500" Height="285">
-    <Grid Background="#D6F0CD">
-        <StackPanel Margin="20" Orientation="Vertical" Background="#EAFFE3">
-            <TextBlock FontSize="30" Text="Registro" Margin="0" HorizontalAlignment="Center"/>
-            <StackPanel Margin="20" Orientation="Horizontal" HorizontalAlignment="Center">
-                <TextBlock Text="ID" Margin="5,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBox x:Name="IDTxBox" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="22" Margin="0"/>
-                <TextBlock Text="Fecha Creacion" Margin="20,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBox x:Name="FechaTxBox" HorizontalAlignment="Center" Width="80" Height="22" Margin="0"/>
-            </StackPanel>
-            <TextBlock Text="Descripcion" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBox x:Name="DescTxBox" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="22" Margin="0"/>
-            <StackPanel Margin="10" Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button x:Name="NuevoBtn" Margin="10,3" Width="75">
-                    <StackPanel Orientation="Horizontal">
-                        <Label Content="➕ Nuevo"/>
-                    </StackPanel>
-                </Button>
-                <Button x:Name="BuscarBtn" Margin="10,3" Width="75">
-                    <StackPanel Orientation="Horizontal">
-                        <Label Content="👁‍🗨 Buscar"/>
-                    </StackPanel>
-                </Button>
-                <Button x:Name="GuardarBtn" Margin="10,3" Width="75">
-                    <StackPanel Orientation="Horizontal">
-                        <Label Content="✔ Guardar"/>
-                    </StackPanel>
-                </Button>
-                <Button x:Name="EliminarBtn" Margin="10,3" Width="75">
-                    <StackPanel Orientation="Horizontal">
-                        <Label Content="❌ Eliminar"/>
-                    </StackPanel>
-                </Button>
-            </StackPanel>
-
+        Icon="./Resources/Icons/Registro.ico"
+        Title="Registro" Width="500" Height="400">
+    <Grid>
+        <StackPanel Background="#76B0A1">
+            <Menu Height="25" Width="160" HorizontalAlignment="Center">
+                <MenuItem x:Name="RegistrosMenuItem" Header="Registros" FontSize="18" Height="23" Width="80">
+                    <MenuItem x:Name="RolesMenuItem" Header="Registro de Roles" Click="rRolesMenuItem_Click"/>
+                </MenuItem>
+                <MenuItem x:Name="ConsultaMenuItem" Header="Consulta" FontSize="18" Height="23" Width="80">
+                    <MenuItem x:Name="CRolesMenuItem" Header="Consulta de Roles" Click="CRolesMenuItem_Click"/>
+                </MenuItem>
+            </Menu>
+            <Label HorizontalAlignment="Center" FontSize="28" Content= "Registro y consulta de Roles"/>
+        </StackPanel>
+        <Image Width="500" Margin="0,0,0,0" VerticalAlignment="Bottom">
+            <Image.Source>
+                <BitmapImage DecodePixelWidth="500" UriSource="./Resources/Icons/Main_BG.png"/>
+            </Image.Source>
+        </Image>
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom"> 
+            <Label Content="by: Samuel Duran"/>
         </StackPanel>
     </Grid>
 </Window>

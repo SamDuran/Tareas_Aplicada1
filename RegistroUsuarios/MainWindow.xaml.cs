@@ -13,35 +13,25 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using RegistroUsuarios.Entidades;
+using RegistroUsuarios.UI.Consultas;
+using RegistroUsuarios.UI.Registros;
 
 namespace RegistroUsuarios
 {
     public partial class MainWindow : Window
     {
-        private Roles rol = new Roles();
         public MainWindow()
         {
             InitializeComponent();
-
-            this.DataContext=rol;
         }
-        private void GuardarBtn_Click(object sender, RoutedEventArgs e){
-            
+        private void rRolesMenuItem_Click(object sender, RoutedEventArgs e){
+            Registro registro = new Registro();
+            registro.Show();
         }
-        private void limpiar(){
-            this.rol=new Roles();
-            this.DataContext=rol;
-        } 
-        private bool Validar(){
-            bool esValido=true;
 
-            if(IDTxBox.Text.Length==0){
-                esValido=false;
-                MessageBox.Show("Registro fallido", "Fallo",
-                    MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
-
-            return esValido;
+        private void CRolesMenuItem_Click(object sender, RoutedEventArgs e){
+            Consultas consulta = new Consultas();
+            consulta.Show();
         }
     }
 }
