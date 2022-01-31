@@ -1,0 +1,26 @@
+<Window x:Class="Ejercicio_IV._5.UI.Ventana2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio_IV._5.UI"
+        mc:Ignorable="d"
+        Icon="./Resources/Icon.png"
+        Title="Promedio de edades" Height="200" Width="480">
+    <Grid>
+        <!--PROGRAMA QUE SOLICITE X CANTIDAD DE PERSONAS Y SOLICITE LA EDAD DE ELLOS
+        Y DIGA CUAL DE ELLOS ES EL MAYOR Y MENOR-->
+        
+        <StackPanel Margin="5" Orientation="Vertical" HorizontalAlignment="Center">
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="Ingrese la edad de la persona" Margin="2" HorizontalAlignment="Center"/> 
+                <TextBox x:Name="cantTextBlock" Margin="2" Width="60"/>  
+            </StackPanel>
+            <Button x:Name="CantPersonasBtn" HorizontalAlignment="Center" Width="100" Margin="4">
+                <StackPanel>
+                    <Label Content="Aceptar"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+    </Grid> 
+</Window>

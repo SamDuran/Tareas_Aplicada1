@@ -1,0 +1,26 @@
+﻿<Window x:Class="Ejercicio_IV._2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio_IV._2"
+        mc:Ignorable="d"
+        Icon="./Resources/Icon.png"
+        Title="Potenciacion" Height="240" Width="450">
+        <Grid Background="#F7FBFA"> 
+            <StackPanel Margin="5" Orientation="Vertical" HorizontalAlignment="Center">
+                <Label Content="Potenciacion" HorizontalAlignment="Center" FontSize="22"/>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="Ingrese el numero" Margin="2" HorizontalAlignment="Center"/> 
+                    <TextBox x:Name="numeroTextBlock" Margin="2" Width="60"/> 
+                    <TextBlock Text="Ingrese el exponente" Margin="2" HorizontalAlignment="Center"/> 
+                    <TextBox x:Name="potenciaTextBlock" Margin="2" Width="60"/> 
+                </StackPanel>
+                <Button x:Name="CalcularBtn" HorizontalAlignment="Center" Width="100" Margin="4" Click="CalcularBtn_Click">
+                    <StackPanel>
+                        <Label Content="Calcular"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </Grid>
+</Window>
