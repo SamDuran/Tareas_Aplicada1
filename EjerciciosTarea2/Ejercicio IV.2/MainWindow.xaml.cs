@@ -23,14 +23,14 @@ namespace Ejercicio_IV._2
         }
         private void CalcularBtn_Click(object sender, RoutedEventArgs e){ //erroneo?
             int num1, exponente;
-            num1=Convert.ToInt32(numeroTextBlock);
-            exponente=Convert.ToInt32(potenciaTextBlock);
+            num1=Convert.ToInt32(numeroTextBlock.Text);
+            exponente=Convert.ToInt32(potenciaTextBlock.Text);
             elevar(num1,exponente);
         }
         private void elevar(int num, int exponente){
             int numero=num;
 
-            for(int i = 0; i<exponente;i++)
+            for(int i = 1; i<exponente;i++)
                 numero*=num;
 
             string resultado="Resultado: "+numero;

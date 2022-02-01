@@ -21,9 +21,7 @@ namespace Ejercicio_IV._5.UI
         {
             InitializeComponent();
         }
-        private int[] crearArreglo(int n){
-            int[] arreglo = new int[n];
-            return arreglo;
+        private void CantPersonasBtn_Click(object sander, RoutedEventArgs e){
         }
     }
 }

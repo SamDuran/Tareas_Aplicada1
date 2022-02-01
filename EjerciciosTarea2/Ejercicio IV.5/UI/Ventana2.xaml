@@ -8,15 +8,12 @@
         Icon="./Resources/Icon.png"
         Title="Promedio de edades" Height="200" Width="480">
     <Grid>
-        <!--PROGRAMA QUE SOLICITE X CANTIDAD DE PERSONAS Y SOLICITE LA EDAD DE ELLOS
-        Y DIGA CUAL DE ELLOS ES EL MAYOR Y MENOR-->
-        
         <StackPanel Margin="5" Orientation="Vertical" HorizontalAlignment="Center">
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Ingrese la edad de la persona" Margin="2" HorizontalAlignment="Center"/> 
-                <TextBox x:Name="cantTextBlock" Margin="2" Width="60"/>  
+                <TextBox x:Name="edadTextBlock" Margin="2" Width="60"/>  
             </StackPanel>
-            <Button x:Name="CantPersonasBtn" HorizontalAlignment="Center" Width="100" Margin="4">
+            <Button x:Name="CantPersonasBtn" HorizontalAlignment="Center" Width="100" Margin="4" Click="CantPersonasBtn_Click">
                 <StackPanel>
                     <Label Content="Aceptar"/>
                 </StackPanel>

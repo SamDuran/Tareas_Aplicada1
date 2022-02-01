@@ -8,8 +8,6 @@
         Icon="./Resources/Icon.png"
         Title="MainWindow" Height="200" Width="480">
     <Grid>
-        <!--PROGRAMA QUE SOLICITE X CANTIDAD DE PERSONAS Y SOLICITE LA EDAD DE ELLOS
-        Y DIGA CUAL DE ELLOS ES EL MAYOR Y MENOR-->
         <StackPanel Margin="5" Orientation="Vertical" HorizontalAlignment="Center">
             <Label Content="Calculadora promedial de grupo de personas" HorizontalAlignment="Center" FontSize="22"/>
             <StackPanel Orientation="Vertical">

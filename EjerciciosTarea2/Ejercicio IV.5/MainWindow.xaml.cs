@@ -16,7 +16,6 @@ using Ejercicio_IV._5.UI;
 
 namespace Ejercicio_IV._5
 {
-
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -24,6 +23,9 @@ namespace Ejercicio_IV._5
             InitializeComponent();
         }
         private void CantPersonasBtn_Click(object sender, RoutedEventArgs e){
+            int[] arreglo = new int[Convert.ToInt32(cantTextBlock.Text)];
+            for(int i = 0; i<Convert.ToInt32(cantTextBlock.Text); i++){
+            }
             Ventana2 nueva = new Ventana2();
             nueva.Show();
         }
