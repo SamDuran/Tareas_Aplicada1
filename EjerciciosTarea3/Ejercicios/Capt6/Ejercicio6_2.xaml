@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tarea3"
         mc:Ignorable="d"
-        Title="Capitulo 6 Ejercicio 2" Height="300" Width="450"
+        Title="Capitulo 6 Ejercicio 2" Height="350" Width="500"
         Icon="./Resources/Icon.png">
-    <Grid Background="#904E69">
+    <Grid>
+        <Image Source ="./Resources/Main_BG.png" Height="350" Width="500" Grid.RowSpan="8" Grid.Row="1"/>
+        <StackPanel HorizontalAlignment="Center" Margin="10" Orientation="Vertical">
+            <TextBlock Text="Calculo de edad menor" FontSize="22" Foreground="#FFFFFF"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text=" Digite la cantidad de aulas" Margin="10" Foreground="#FFFFFF"/>
+                <TextBox x:Name="cantAulaTextBox" Width="40" Height="22" Margin="10"/>
+            </StackPanel>
+            <Button x:Name="agregarBTN"  Margin="10" Content="Agregar" Height="25" Width="60" Click="agregarBTN_Click"/>
+            <Button x:Name="edadesBTN"  Margin="10" Content="Introducir edades" Height="27" Width="120" Click="edadesBTN_Click"/>
+            <Button x:Name="resultadosBTN"  Margin="10" Content="Calcular" Height="27" Width="120" Click="resultadosBTN_Click"/>
+        </StackPanel>
     </Grid>
 </Window>

@@ -44,17 +44,17 @@ namespace Tarea3.Ejercicios.Capt6
         }
         static float calcularPromedio(float[][] arreglo)
         {
-            float edades =0f;
+            float nota =0f;
             int estudiantes = 0;
             for(int i=0;i<arreglo.Length;i++)
             {
                 for(int j=0;j<arreglo[i].Length;j++)
                 {
-                    edades+=arreglo[i][j];
+                    nota+=arreglo[i][j];
                     estudiantes++;
                 }
             }
-            return edades/estudiantes;
+            return nota/estudiantes;
         }
     }
 }
