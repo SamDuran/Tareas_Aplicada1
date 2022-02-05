@@ -1,0 +1,12 @@
+<Window x:Class="Tarea3.Ejercicios.Capt6.Ejercicio6_1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tarea3"
+        mc:Ignorable="d"
+        Title="Capitulo 6 Ejercicio 1" Height="300" Width="450"
+        Icon="./Resources/Icon.png">
+    <Grid Background="#904E69">
+    </Grid>
+</Window>

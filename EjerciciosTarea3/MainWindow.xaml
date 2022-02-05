@@ -1,0 +1,31 @@
+﻿<Window x:Class="Tarea3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tarea3"
+        mc:Ignorable="d"
+        Title="Ejercicios Capt 6/7" Height="307" Width="450"
+        Icon="./Resources/Icon.png">
+    <Grid Background="#904E69">
+        <Menu Background="#AB5A7C" Width="138" HorizontalAlignment="Center">
+            <MenuItem x:Name="menuCapt6" Header="Capitulo 6" Background="#AB5A7C">
+                <MenuItem x:Name="menuEjercicio6_1" Header="Ejercicio 1" Click="menuEjercicio6_1_Click"/>
+                <MenuItem x:Name="menuEjercicio6_2" Header="Ejercicio 2" Click="menuEjercicio6_2_Click"/>
+                <MenuItem x:Name="menuEjercicio6_3" Header="Ejercicio 3" Click="menuEjercicio6_3_Click"/>
+                <MenuItem x:Name="menuEjercicio6_4" Header="Ejercicio 4" Click="menuEjercicio6_4_Click"/>
+                <MenuItem x:Name="menuEjercicio6_5" Header="Ejercicio 5" Click="menuEjercicio6_5_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="menuCapt7" Header="Capitulo 7" Background="#AB5A7C">
+                <MenuItem x:Name="menuEjercicio7_1" Header="Ejercicio 1" Click="menuEjercicio7_1_Click"/>
+                <MenuItem x:Name="menuEjercicio7_2" Header="Ejercicio 2" Click="menuEjercicio7_2_Click"/>
+                <MenuItem x:Name="menuEjercicio7_5" Header="Ejercicio 5" Click="menuEjercicio7_5_Click"/>
+            </MenuItem>
+        </Menu>
+        <Image Width="450" Height="250" VerticalAlignment="Bottom">
+            <Image.Source>
+                <BitmapImage DecodePixelWidth="450" DecodePixelHeight="250" UriSource="./Resources/Main_BG.png"/>
+            </Image.Source>
+        </Image>
+    </Grid>
+</Window>
