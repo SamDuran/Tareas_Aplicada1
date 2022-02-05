@@ -4,9 +4,24 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tarea3"
-        mc:Ignorable="d"
+        mc:Ignorable="d" 
         Title="Capitulo 6 Ejercicio 4" Height="300" Width="450"
         Icon="./Resources/Icon.png">
-    <Grid Background="#904E69">
+    <Grid>
+        <Image Source ="./Resources/Main_BG.png" Height="350" Width="500" Grid.RowSpan="8" Grid.Row="1"/>
+        <StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Label Content="Agregar cantidad de Cursos" Margin="5,0" HorizontalAlignment="Center" FontSize="22" Foreground="#FFFFFF" />
+                <TextBox x:Name="CantidadCursosTextBox" Height="23" Width="100" HorizontalAlignment="Center" Margin="20,0" />
+                <Button x:Name="AgregarBTN" Height="25" Width="120" HorizontalAlignment="Center" Margin="10,10" Content="Agregar Cursos" Click="AgregarBTN_Click" />
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Agregar calificaciones de estudiantes" Margin="5,0" HorizontalAlignment="Center" FontSize="22" Foreground="#FFFFFF" />
+                <Button x:Name="AgregarNotasButton" Height="25" Width="120" HorizontalAlignment="Center" Margin="10,10" Content="Agregar las calificaciones" Click="AgregarNotasBTN_Click"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="ResultadoBTN" Height="25" Width="70" HorizontalAlignment="Center" Margin="10,10" Content="Resultado"  Click="ResultadoBTN_Click"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>
