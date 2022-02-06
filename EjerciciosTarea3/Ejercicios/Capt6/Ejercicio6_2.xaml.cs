@@ -10,12 +10,11 @@ namespace Tarea3.Ejercicios.Capt6
         private int edadMenor = 10000;
         private int habMenor=10000;
         private int indMenor;
-        private float menor;
         private float contador;
         private float[][] edades;
-        private float promedio;
         public Ejercicio6_2()
         {
+            edades = new float[0][];
             InitializeComponent();
         }
         private void agregarBTN_Click(object sander, RoutedEventArgs e)

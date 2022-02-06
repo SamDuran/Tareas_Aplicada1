@@ -13,6 +13,7 @@ namespace Tarea3.Ejercicios.Capt6
         private float[][] edades;
         public Ejercicio6_3()
         {
+            edades = new float [0][];// Para eliminar warnings
             InitializeComponent();
         }
         private void agregarBTN_Click(object sander, RoutedEventArgs e)

@@ -5,7 +5,7 @@ namespace Tarea3.Ejercicios.Capt6
 {
     public partial class Ejercicio6_5 : Window{
         private float aula;
-        private float[][]? notas;
+        private float[][] notas = new float[0][]; // Para eliminar warnings
         private float cantidad_Estudiantes;
         private float contador;
         private float suma;

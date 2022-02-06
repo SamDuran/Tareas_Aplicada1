@@ -8,7 +8,9 @@
         Title="Ejercicios Capt 6/7" Height="307" Width="450"
         Icon="./Resources/Icon.png">
     <Grid Background="#904E69">
-        <Menu Background="#AB5A7C" Width="138" HorizontalAlignment="Center">
+        <Image Source ="./Resources/Main_BG.png" Height="307" Width="450" Grid.RowSpan="8" Grid.Row="1"/>
+        <Label Content="Ejercicios Capitulos 6 y 7" Foreground="#FFFFFF" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Menu Background="#AB5A7C" Width="137" HorizontalAlignment="Center" Height="20" VerticalAlignment="Top">
             <MenuItem x:Name="menuCapt6" Header="Capitulo 6" Background="#AB5A7C">
                 <MenuItem x:Name="menuEjercicio6_1" Header="Ejercicio 1" Click="menuEjercicio6_1_Click"/>
                 <MenuItem x:Name="menuEjercicio6_2" Header="Ejercicio 2" Click="menuEjercicio6_2_Click"/>
@@ -22,10 +24,5 @@
                 <MenuItem x:Name="menuEjercicio7_5" Header="Ejercicio 5" Click="menuEjercicio7_5_Click"/>
             </MenuItem>
         </Menu>
-        <Image Width="450" Height="250" VerticalAlignment="Bottom">
-            <Image.Source>
-                <BitmapImage DecodePixelWidth="450" DecodePixelHeight="250" UriSource="./Resources/Main_BG.png"/>
-            </Image.Source>
-        </Image>
     </Grid>
 </Window>

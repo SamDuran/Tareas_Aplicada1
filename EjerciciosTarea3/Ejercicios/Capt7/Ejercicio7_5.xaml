@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tarea3"
         mc:Ignorable="d"
-        Title="Capitulo 7 Ejercicio 5" Height="300" Width="450"
+        Title="Capitulo 7 Ejercicio 5" Height="450" Width="700"
         Icon="./Resources/Icon.png">
-    <Grid Background="#904E69">
-    </Grid>
+        <Grid>
+            <Image Source ="./Resources/Main_BG.png" Height="450" Width="700" Grid.RowSpan="8" Grid.Row="1"/>
+            <StackPanel Orientation="Vertical">
+                <Label Content="Agenda" Margin="5" FontSize="28" Foreground="#FFFFFF" HorizontalAlignment="Center"/>
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Nombre:" Margin="5,0" HorizontalAlignment="Center" FontSize="22" Foreground="#FFFFFF"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBox x:Name="personaTextBox" Height="23" Width="100" HorizontalAlignment="Center" Margin="20,0" />
+                        <Button x:Name="buscarPersonaBTN" Height="25" Width="140" HorizontalAlignment="Center" Margin="7,7" Content="Buscar Persona" Click="buscarPersonaBTN_Click"/>
+                    </StackPanel>
+                    <Label Content="Número: " Margin="5,0" HorizontalAlignment="Center" FontSize ="22" Foreground="#FFFFFF"/>
+                    <TextBox x:Name="numeroTextBox" Height="23" Width="100" HorizontalAlignment="Center" Margin="20,0"/>
+                    <Button x:Name="AgregarBTN" Height="25" Width="200" HorizontalAlignment="Center" Margin="10,10" Content="Agregar Persona" Click="AgregarBTN_Click" />
+                </StackPanel>
+            </StackPanel>
+        </Grid>
 </Window>

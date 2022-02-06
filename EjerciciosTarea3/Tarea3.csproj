@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
@@ -16,5 +15,4 @@
     <Resource Include="./Ejercicios/Capt7/Resources/Icon.png"/>
     <Resource Include="./Ejercicios/Capt7/Resources/Main_BG.png"/>
   </ItemGroup>
-
 </Project>

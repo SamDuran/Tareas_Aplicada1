@@ -6,12 +6,13 @@ namespace Tarea3.Ejercicios.Capt6
 {
     public partial class Ejercicio6_4 : Window{
         private float aula;
-        private float[][]? notas;
+        private float[][] notas;
         private float cantidad_Estudiantes;
         private float contador;
         private float suma;
         public Ejercicio6_4()
         {
+            notas = new float [0][]; // Para eliminar warnings
             InitializeComponent();
         }
         private void AgregarBTN_Click(object sander, RoutedEventArgs e)
