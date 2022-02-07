@@ -3,13 +3,14 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using RegistroEstudiantes_LabTarea3.DAL;
 
 #nullable disable
 
 namespace RegistroEstudiantes_LabTarea3.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20220206230530_inicial")]
+    [Migration("20220206231322_inicial")]
     partial class inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

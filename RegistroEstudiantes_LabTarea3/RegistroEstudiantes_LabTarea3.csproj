@@ -14,5 +14,26 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
+  <!-- Agregando iconos y fondos a utilizar -->
+  <ItemGroup>
+    <!-- Iconos para la nueva ventana -->
+    <Resource Include="./Resources/Main_BG.png" />
+    <Resource Include="./Resources/Main_Icon.png" />
+    <!-- Imagenes e Iconos para los registros -->
+    <Resource Include="./UI/Registros/Resources/rCarrera_BG.png"/>
+    <Resource Include="./UI/Registros/Resources/rCarrera_Icon.png"/>
+    <Resource Include="./UI/Registros/Resources/rEstudiante_BG.png"/>
+    <Resource Include="./UI/Registros/Resources/rEstudiante_Icon.png"/> 
+
+    <Resource Include="./UI/Registros/Resources/Buscar_Icon.png"/>
+    <Resource Include="./UI/Registros/Resources/Eliminar_Icon.png"/>
+    <Resource Include="./UI/Registros/Resources/Guardar_Icon.png"/>
+    <Resource Include="./UI/Registros/Resources/Nuevo_Icon.png"/>
+    <!-- Imagenes e iconos para las consultas -->
+    <Resource Include="./UI/Consultas/Resources/cCarrera_BG.png"/>
+    <Resource Include="./UI/Consultas/Resources/cCarrera_Icon.png"/>
+    <Resource Include="./UI/Consultas/Resources/cEstudiante_BG.png"/>
+    <Resource Include="./UI/Consultas/Resources/cEstudiante_Icon.png"/>
+  </ItemGroup>
 
 </Project>

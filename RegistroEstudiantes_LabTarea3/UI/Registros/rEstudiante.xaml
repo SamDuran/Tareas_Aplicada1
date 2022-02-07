@@ -1,0 +1,57 @@
+﻿<Window x:Class="RegistroEstudiantes_LabTarea3.UI.Registros.rEstudiante"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RegistroEstudiantes_LabTarea3.UI.Registros"
+        mc:Ignorable="d"
+        Icon="./Resources/rEstudiante_Icon.png"
+        Title="Registro de estudiantes" Width="530" Height="285">
+        <Grid Background="#36859F"> 
+            <Image Source="./Resources/rEstudiante_BG.png" Height="340" Width="530" Grid.RowSpan="8" Grid.Row="1"/>
+            <StackPanel Orientation="Vertical" Margin="20,0,20,0">
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="ID:" FontSize="17"/>
+                    <TextBox x:Name="idTextBox" FontSize="15" Margin="20,0,0,0" Width="60" Height="28"/> 
+                    <Button x:Name="BuscarBTN" Width="80" Height="28"> <!-- Click="BuscarBTN_Click" -->
+                        <StackPanel Orientation = "Horizontal">
+                            <Image Source ="./Resources/Buscar_Icon.png"/>
+                            <Label Content="Buscar"/>
+                        </StackPanel>
+                    </Button>
+                    <TextBlock Text="ID Carrera:" FontSize="17" Margin ="20,0,0,0"/>
+                    <TextBox x:Name="idCarreraTextBox" FontSize="15" Margin="20,0,0,0" Width="60" Height="28"/> 
+                    <CheckBox x:Name="activoCheck" Margin="20,0,0,0"/>
+                    <TextBlock Text="Activo"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Nombre:" FontSize="17"/>
+                    <TextBox x:Name="NombreTextBox" Margin="20,0,0,0" Width="190" Height="24" TextWrapping="Wrap"/> 
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="Email:" FontSize="17"/>
+                    <TextBox x:Name="emailTextBox" Margin="25,0,0,0" Width="190" Height="24" TextWrapping="Wrap"/> 
+                </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,25" HorizontalAlignment="Center">
+                    <Button x:Name="NuevoBTN" Margin="5,0" Width="95" Height="30"> <!-- Click="NuevoBTN_Click" -->
+                        <StackPanel Orientation = "Horizontal">
+                            <Image Source ="./Resources/Nuevo_Icon.png"/>
+                            <Label Content="Nuevo"/>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="GuardarBTN" Margin="5,0" Width="95" Height="30"> <!-- Click="GuardarBTN_Click" -->
+                        <StackPanel Orientation = "Horizontal">
+                            <Image Source ="./Resources/Guardar_Icon.png"/>
+                            <Label Content="Guardar"/>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="EliminarBTN" Margin="5,0" Width="95" Height="30"> <!-- Click="EliminarBTN_Click" -->
+                        <StackPanel Orientation = "Horizontal">
+                            <Image Source ="./Resources/Eliminar_Icon.png"/>
+                            <Label Content="Eliminar"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+</Window>

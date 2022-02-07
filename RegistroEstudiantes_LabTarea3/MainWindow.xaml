@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RegistroEstudiantes_LabTarea3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Icon="./Resources/Main_Icon.png"
+        Title="Gestion de estudiantes y carreras" Width="370" Height="240">
+    <Grid Background="#36859F"> 
+        <Image Source="./Resources/Main_BG.png" Height="240" Width="380" Grid.RowSpan="8" Grid.Row="1"/>
+        <Label Content="Estudiantes y carreras" 
+            Foreground="#FFFFFF" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Menu Background="#36859F" Width="132" HorizontalAlignment="Center" Height="19" VerticalAlignment="Top">
+            <MenuItem x:Name="menuRegistros" Header="Registros" Background="#36859F">
+                <MenuItem x:Name="rEstudiante" Header="Registro estudiante" Click="rEstudiante_Click"/>
+                <MenuItem x:Name="rCarrera" Header="Registro carrera" Click="rCarrera_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="menuConsultas" Header="Consultas" Background="#36859F">
+                <MenuItem x:Name="cEstudiante" Header="Consulta estudiante" Click="cEstudiante_Click"/>
+                <MenuItem x:Name="cCarrera" Header="Consulta carrera" Click="cCarrera_Click"/>
+            </MenuItem>
+        </Menu>
     </Grid>
 </Window>
