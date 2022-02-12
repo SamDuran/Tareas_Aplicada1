@@ -1,0 +1,25 @@
+﻿<Window x:Class="EjerciciosTarea4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EjerciciosTarea4"
+        mc:Ignorable="d"
+        Icon="./Resources/MainIcon.png"
+        Title="Ejercicios Capt 8 y 9" Width="350" Height="270">
+    <Grid>
+        <Image Source = "./Resources/BackGroung_600x400_.png" Width="350" Height="270" Grid.RowSpan="8" Grid.Row="1"/>
+        <Label Content="Ejercicios Capitulos 8 y 9" FontSize="22" Foreground="#FFFFFF" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Menu Width="142" Height="18" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#36849E">
+            <MenuItem x:Name="MenuCapt8" Header="Capitulo 8" Background="#36849E">
+                <MenuItem x:Name="menuEjercicio8_3" Header="Ejercicio 3" Click="menuEjercicio8_3_Click"/>
+                <MenuItem x:Name="menuEjercicio8_5" Header="Ejercicio 5" Click="menuEjercicio8_5_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="MenuCapt9" Header="Capitulo 9 " Background="#36849E">
+                <MenuItem x:Name="menuEjercicio9_1" Header="Ejercicio 1" Click="menuEjercicio9_1_Click"/>
+                <MenuItem x:Name="menuEjercicio9_3" Header="Ejercicio 3" Click="menuEjercicio9_3_Click"/>
+                <MenuItem x:Name="menuEjercicio9_4" Header="Ejercicio 4" Click="menuEjercicio9_4_Click"/>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>
