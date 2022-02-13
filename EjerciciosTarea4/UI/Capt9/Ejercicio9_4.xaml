@@ -1,0 +1,23 @@
+<Window x:Class="EjerciciosTarea4.UI.Capt9.Ejercicio9_4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EjerciciosTarea4"
+        mc:Ignorable="d"
+        Icon="./Resources/Icon9.png"
+        Title="Capt 9 Ejercicio 4" Width="640" Height="427">
+    <Grid>
+        <Image Source = "./Resources/BackGround_640x427_.png" Width="640" Height="427" Grid.RowSpan="8" Grid.Row="1"/>
+        <StackPanel Orientation="Vertical" Margin="20">
+            <Label Content="Gestion de neumaticos" FontSize ="22" Foreground="#FFFFFF" HorizontalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" Margin="7" HorizontalAlignment="Center">
+                <TextBlock Text="Marca" Foreground="#FFFFFF" Margin="5,0"/>
+                <TextBox x:Name="TextBoxMarca" Margin="5,0" Width="50" />
+                <TextBlock Text="Tamaño" Foreground="#FFFFFF" Margin="5,0"/>
+                <TextBox x:Name="TextBoxTamaño" Margin="5,0" Width="50" />
+            </StackPanel>
+            <Button x:Name="GuardarBTN" Margin="2" Content="Guardar Neumatico" Width="200" FontSize="15" HorizontalAlignment="Center" Click="GuardarBTN_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

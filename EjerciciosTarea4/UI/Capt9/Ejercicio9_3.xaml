@@ -1,0 +1,31 @@
+<Window x:Class="EjerciciosTarea4.UI.Capt9.Ejercicio9_3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EjerciciosTarea4"
+        mc:Ignorable="d"
+        Icon="./Resources/Icon9.png"
+        Title="Capt 9 Ejercicio 3" Width="400" Height="267"> 
+    <Grid>
+        <Image Source = "./Resources/BackGround_640x427_.png" Width="400" Height="267" Grid.RowSpan="8" Grid.Row="1"/>
+        <StackPanel Orientation="Vertical" Margin="20">
+            <Label Content="Guardado de mascota con dueño" FontSize ="22" Foreground="#FFFFFF" HorizontalAlignment="Center"/>
+            <Label Content="Dueño" FontSize ="14" Foreground="#FFFFFF" HorizontalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" Margin="7" HorizontalAlignment="Center">
+                <TextBlock Text="Nombre" Foreground="#FFFFFF" Margin="5,0"/>
+                <TextBox x:Name="TextBoxNombre" Margin="5,0" Width="100" />
+                <TextBlock Text="Edad" Foreground="#FFFFFF" Margin="5,0"/>
+                <TextBox x:Name="TextBoxEdad" Margin="5,0" Width="40" />
+            </StackPanel>
+            <Label Content="Mascota" FontSize ="14" Foreground="#FFFFFF" HorizontalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" Margin="7" HorizontalAlignment="Center">
+                <TextBlock Text="Nombre" Foreground="#FFFFFF" Margin="5,0"/>
+                <TextBox x:Name="TextBoxNombreM" Margin="5,0" Width="100" />
+                <TextBlock Text="Especie" Foreground="#FFFFFF" Margin="5,0"/>
+                <TextBox x:Name="TextBoxEspecie" Margin="5,0" Width="70" />
+            </StackPanel>
+            <Button x:Name="GuardarBTN" Margin="2" Content="Guardar persona" Width="200" FontSize="15" HorizontalAlignment="Center" Click="GuardarBTN_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

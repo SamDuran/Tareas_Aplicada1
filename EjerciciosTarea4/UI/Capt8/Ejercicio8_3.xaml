@@ -1,0 +1,20 @@
+<Window x:Class="EjerciciosTarea4.UI.Capt8.Ejercicio8_3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EjerciciosTarea4"
+        mc:Ignorable="d"
+        Icon="./Resources/Icon8.png"
+        Title="Capt 8 Ejercicio 3" Width="400" Height="267">
+    <Grid>
+        <Image Source = "./Resources/BackGround_640x427_.png" Width="400" Height="267" Grid.RowSpan="8" Grid.Row="1"/>
+        <StackPanel Margin="20" Orientation="Vertical">
+            <Label Content="Fecha y hora actual" FontSize="25" Foreground="#FFFFFF" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="textBlockFecha" Text="" FontSize="20" Foreground="#FFFFFF" HorizontalAlignment="Center"/>
+            <Button x:Name="CalcularBTN" HorizontalAlignment="Center" Margin="0,10,0,10" Width="80" Height="28" Click="CalcularBTN_Click">
+                <Label Content=" ⌚Calcular"/>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
