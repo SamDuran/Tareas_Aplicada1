@@ -1,0 +1,110 @@
+﻿@page "/counter"
+@page "/Productos"
+@page "/Productos/{ProductoId:int}"
+<EditForm Model="producto" OnValidSubmit="Guardar">
+    <DataAnnotationsValidator />
+    <div className="Container">
+        <div class="card">
+            <div class="card-header">
+                <h3>Registro de productos</h3>
+            </div>
+
+            <div class="card-body">
+
+                @* <div Class="form-group">
+                    <label>Producto ID</label>
+                    <InputNumber class="form-control" @bind-Value="producto.ProductoId" />
+                    </div> *@
+                <div class="form-row align-items-center">
+                    <div class="col">
+                        <div class="form-group">
+                            <label>Producto Id</label>
+                            <div class="input-group">
+                                <InputNumber @bind-Value="producto.ProductoId" class="form-control col-4" />
+                                <div class="input-group-append">
+                                    <button type="button" class="btn btn-primary input-group-text"
+                                        @onclick="Buscar">Buscar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                @* Descripción *@
+                <div Class="form-group">
+                    <label>Descripción</label>
+                    <InputText class="form-control" @bind-Value="producto.Descripcion" />
+                    <ValidationMessage For="@(() => producto.Descripcion)" />
+                </div>
+
+                @* Existencia *@
+                <div Class="form-group">
+                    <label>Existencia</label>
+                    <InputNumber class="form-control" @bind-Value="producto.Existencia" />
+                    <ValidationMessage For="@(() => producto.Existencia)" />
+                </div>
+                @* Costo *@
+                <div Class="form-group">
+                    <label>Costo</label>
+                    <InputNumber class="form-control" @bind-Value="producto.Costo" />
+                </div>
+                @* Valor Inventario *@
+                <div Class="form-group">
+                    <label>Valor Inventario</label>
+                    <InputNumber class="form-control" @bind-Value="producto.ValorInventario" />
+                </div>
+
+            </div>
+            <div class="card-footer">
+                @* Botones *@
+                <div class="form-group text-center" display: inline-block>
+                    <button type="button" class="btn btn-lg btn-primary">Nuevo</button>
+                    <button type="submit" class="btn btn-lg btn-success">Guardar</button>
+                    <button type="button" class="btn btn-lg btn-danger" @onclick="Eliminar">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</EditForm>
+@code {
+    [Parameter]
+    public int ProductoId { get; set; }
+    public Productos producto { get; set; } = new Productos();
+
+
+
+    protected override void OnInitialized()
+    {
+        Buscar();
+    }
+
+    public void Buscar()
+    {
+        if (this.ProductoId > 0)
+        {
+            var encontrado = ProductosBLL.Buscar(this.ProductoId);
+            if (encontrado != null)
+                this.producto = encontrado;
+            //else mostrar un toast (de que no se encontró)
+        }
+    }
+    public void Guardar()
+    {
+
+    }
+    private void Eliminar()
+    {
+        bool eliminado;
+        eliminado = ProductosBLL.Eliminar(producto.ProductoId);
+        if(eliminado)
+        {
+            //Llamar el metodo nuevo
+            //Mostrar toast diciendo que terminó
+        }else
+        {
+            //mostrar toast de que no fue posible eliminar
+        }
+    }
+
+}
