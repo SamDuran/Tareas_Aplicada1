@@ -1,0 +1,13 @@
+<Window x:Class="EjerciciosTarea5.UI.Capt10.Ejercicio10_4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EjerciciosTarea5"
+        mc:Ignorable="d"
+        Icon="./Resources/Capt10_Icon.png"
+        Title="Capitulo 10 Ejercicio 4" Height="260" Width="400"> <!-- 400x225 -->
+    <Grid Background="#8C3066">
+        <Image Source="./Resources/Capt10_BG.png" Height="225" Width="400" Grid.Row="1" Grid.RowSpan="8"/>
+    </Grid>
+</Window>
