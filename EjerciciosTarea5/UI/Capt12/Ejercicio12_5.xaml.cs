@@ -8,6 +8,7 @@ namespace EjerciciosTarea5.UI.Capt12
         public Ejercicio12_5()
         {
             InitializeComponent();
+            ExcepcionesList.Items.Add("**************************************************************\n+System.FormatException");
         }
     }
 }

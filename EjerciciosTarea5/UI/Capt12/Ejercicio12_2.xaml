@@ -6,8 +6,22 @@
         xmlns:local="clr-namespace:EjerciciosTarea5"
         mc:Ignorable="d"
         Icon="./Resources/Capt12_Icon.png"
-        Title="Capitulo 12 Ejercicio 2" Height="260" Width="400"> <!-- 400x225 -->
+        Title="Capitulo 12 Ejercicio 2" Height="260" Width="400">
     <Grid Background="#8C3066">
         <Image Source="./Resources/Capt12_BG.png" Height="225" Width="400" Grid.Row="1" Grid.RowSpan="8"/>
+        <StackPanel Orientation="Vertical">
+            <Label Foreground="#FFFFFF" FontSize="18" Content="Digite un numero" HorizontalAlignment="Center" FontWeight="bold">
+                <Label.Effect> 
+                    <DropShadowEffect ShadowDepth="3" BlurRadius="5" Opacity="0.9"/>
+                </Label.Effect>
+            </Label>
+            <TextBox x:Name="numeroTextBox" Width="150" Text="0" Opacity="0.7" HorizontalAlignment="Center"/>
+
+            <Button Height="22" Width="110" HorizontalAlignment="Center" Margin="0,15" Click="CalcularBTN_Click" Opacity="0.85">
+                <StackPanel VerticalAlignment="Center">
+                    <Label Content="Calcular factorial"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
     </Grid>
 </Window>
