@@ -12,14 +12,14 @@
         <Label Content="Tarea 5" FontSize="24" Foreground="#FFFFFF" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <Label Content="by:Samuel Duran" Foreground="#FFFFFF" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
         <Menu HorizontalAlignment="Center" Background="#8C3066" Width="110" Height="18" VerticalAlignment="Top">
-            <MenuItem x:Name="MenuCapt10" Foreground="#FFFFFF" Header="Capt 10">
+            <MenuItem x:Name="MenuCapt10" Background="#B24F8A" Foreground="#FFFFFF" Header="Capt 10">
                 <MenuItem x:Name="menu10_1" Background="#8C3066" Foreground="#000000" Header="Ejercicio 1" Click="menu10_1_Click"/>
                 <MenuItem x:Name="menu10_2" Background="#762A57" Foreground="#000000" Header="Ejercicio 2" Click="menu10_2_Click"/>
                 <MenuItem x:Name="menu10_3" Background="#8C3066" Foreground="#000000" Header="Ejercicio 3" Click="menu10_3_Click"/>
                 <MenuItem x:Name="menu10_4" Background="#762A57" Foreground="#000000" Header="Ejercicio 4" Click="menu10_4_Click"/>
                 <MenuItem x:Name="menu10_5" Background="#8C3066" Foreground="#000000" Header="Ejercicio 5" Click="menu10_5_Click"/>
             </MenuItem>
-            <MenuItem x:Name="MenuCapt12" Foreground="#FFFFFF" Header="Capt 12">
+            <MenuItem x:Name="MenuCapt12" Background="#B24F8A" Foreground="#FFFFFF" Header="Capt 12">
                 <MenuItem x:Name="menu12_1" Background="#762A57" Foreground="#000000" Header="Ejercicio 1" Click="menu12_1_Click"/>
                 <MenuItem x:Name="menu12_2" Background="#8C3066" Foreground="#000000" Header="Ejercicio 2" Click="menu12_2_Click"/>
                 <MenuItem x:Name="menu12_3" Background="#762A57" Foreground="#000000" Header="Ejercicio 3" Click="menu12_3_Click"/>

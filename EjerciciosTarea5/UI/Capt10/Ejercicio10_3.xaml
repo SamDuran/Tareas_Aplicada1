@@ -6,8 +6,21 @@
         xmlns:local="clr-namespace:EjerciciosTarea5"
         mc:Ignorable="d"
         Icon="./Resources/Capt10_Icon.png"
-        Title="Capitulo 10 Ejercicio 3" Height="260" Width="400"> <!-- 400x225 -->
+        Title="Capitulo 10 Ejercicio 3" Height="260" Width="400">
     <Grid Background="#8C3066">
-        <Image Source="./Resources/Capt10_BG.png" Height="225" Width="400" Grid.Row="1" Grid.RowSpan="8"/>
+        <Image Source="./Resources/Capt10_BG.png" Height="225" Width="400" Grid.Row="1" Grid.RowSpan="8"/> 
+        <StackPanel Orientation="Vertical" Margin="10">
+            <Button Height="22" Width="175" HorizontalAlignment="Center" Margin="0,12" Click="IngresarBTN_Click">
+                <StackPanel VerticalAlignment="Center">
+                    <Label Content="Ingresar datos de un polígono"/>
+                </StackPanel>
+            </Button>
+            <Label Foreground="#FFFFFF" FontSize="18" Content="Poligonos guardados" HorizontalAlignment="Center" FontWeight="bold">
+                <Label.Effect> 
+                    <DropShadowEffect ShadowDepth="3" BlurRadius="5" Opacity="0.9"/>
+                </Label.Effect>
+            </Label>
+            <ListBox x:Name="PoligonoList" Width="370" Height="150" HorizontalAlignment="Center" Opacity="0.75"/>
+        </StackPanel>
     </Grid>
 </Window>
