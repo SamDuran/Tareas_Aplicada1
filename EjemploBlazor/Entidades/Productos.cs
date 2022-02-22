@@ -14,5 +14,7 @@ namespace Samuel_Duran_Ap1_p1_.Entidades
         [Range(1,int.MaxValue, ErrorMessage ="El costo debe estar dentro del rango permitido")]
         public decimal Costo { get; set; }
         public decimal ValorInventario { get; set; }
+        public decimal Precio { get; set; }
+        public decimal PorcentajeGanancia { get; set; }
     }
 }

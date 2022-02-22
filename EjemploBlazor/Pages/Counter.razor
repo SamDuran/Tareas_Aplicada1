@@ -54,13 +54,28 @@
                     <label>Valor Inventario</label>
                     <InputNumber class="form-control" @bind-Value="producto.ValorInventario" />
                 </div>
+                @* Precio *@
+                <div Class="form-group">
+                    <label>Precio</label>
+                    <InputNumber class="form-control" @bind-Value="producto.Precio" />
+                </div>
+                @* Porcentaje Ganancia *@
+                <div Class="form-group">
+                    <label>Ganancia</label>
+                    <div class="input-group">
+                        <InputNumber @bind-Value="producto.PorcentajeGanancia" class="form-control col-4" />
+                        <div class="input-group-append">
+                            <label>%</label> 
+                        </div>
+                    </div>
+                </div>
 
             </div>
             <div class="card-footer">
                 @* Botones *@
                 <div class="form-group text-center" display: inline-block>
                     <button type="button" class="btn btn-lg btn-primary">Nuevo</button>
-                    <button type="submit" class="btn btn-lg btn-success">Guardar</button>
+                    <button type="submit" class="btn btn-lg btn-success"@onclick="Guardar">Guardar</button>
                     <button type="button" class="btn btn-lg btn-danger" @onclick="Eliminar">Eliminar</button>
                 </div>
             </div>
